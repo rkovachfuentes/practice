@@ -75,10 +75,33 @@ def fill(a, n, i, v, x):
     new = ' '.join(a)
     return(new)
 
-print(fill(a, n, i, v, x))
+'''print(fill(a, n, i, v, x))'''
 
 '''for problem h'''
+inputLetters = "BCDE"
+inputLettersList = []
+for char in inputLetters:
+    inputLettersList.append(char)
+    print(inputLettersList)
 
+s0 = inputLettersList[0]
+n = len(inputLettersList)
+print(n)
 
+sIndex = "A"
+def rFunction(sIndex, inputLettersList):
+    outputList = []
+    looping = True
+    while looping == True:
+        n = len(inputLettersList)
+        if n==0:
+            looping = False
+            return outputList
+        elif n > 0:
+            n = n-1
+            outputList = [sIndex] + rFunction(sIndex, inputLettersList)
+            return outputList
+    print(outputList)
 
-
+rFunction(sIndex, inputLettersList)
+'''def tFunction(sList):'''
