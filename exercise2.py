@@ -1,6 +1,5 @@
 '''for problem e - recursive dijkstra's algorithm'''
 '''first try weeee'''
-from re import X
 
 
 inputLine = "84 268"
